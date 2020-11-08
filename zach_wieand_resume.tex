@@ -1,0 +1,292 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\lastupdated % Print the Last Updated text at the top right
+
+\namesection{Zachary}{Wieand}{ % Your name
+\urlstyle{same}\url{http://zmwieand.github.io} \\ % Your website, LinkedIn profile or other web address
+\href{mailto:zmwieand@buffalo.edu}{zmwieand@buffalo.edu} | 716.512.8223 % Your contact information
+}
+
+%----------------------------------------------------------------------------------------
+%	LEFT COLUMN
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.27\textwidth} % The left column takes up 33%29f the text width of the page
+
+%------------------------------------------------
+% Education
+%------------------------------------------------
+
+\section{Education} 
+
+\subsection{University at Buffalo}
+
+\descript{BS in Computer Science}
+\descript{Minor in Mathematics}
+\location{Graduated May 2017 | Amherst, NY}
+Summa Cum Laude \\
+Dean's List (8 Semesters) \\
+\location{ Cum. GPA: 3.91 / 4.0}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Coursework
+%------------------------------------------------
+
+\section{Coursework}
+
+% Intro to Computer Science I \& II \\
+% Discrete Mathematics \\
+Data Structures and Algorithms \\
+% Digital Systems \\ 
+Programming Languages \\
+Algorithms \\
+Operating Systems \\
+Machine Learning \\
+Scientific and Mathematical Computing \\
+Intro to Security \\
+Modern Networking Concepts \\
+Distributed Systems \\
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Skills
+%------------------------------------------------
+
+\section{Skills}
+
+\subsection{Programming}
+
+\location{Over 20,000 lines:}
+Java \textbullet{} C++ \\
+\location{Over 10,000 lines:}
+Python \textbullet{} C \\
+\location{Familiar:}
+Android \textbullet{} Flask \textbullet{} HTML \textbullet{} CSS
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Extracurricular Activities
+%------------------------------------------------
+
+\section{Extracurricular Activities} 
+
+Secretary of Association of Computing Machinery \\
+Update Events Page of \urlstyle{same}\url{ubacm.org} on a weekly basis \\
+Organizer of UB Hacking 2014/15/16 \\
+Member of University at Buffalo Division 2 Inline Hockey Team \\
+Participant of University at Buffalo Intramural Volleyball \\
+
+\sectionspace % Some whitespace after the section
+
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the left column
+\hfill
+%
+%----------------------------------------------------------------------------------------
+%	RIGHT COLUMN
+%----------------------------------------------------------------------------------------
+%
+\begin{minipage}[t]{0.71\textwidth} % The right column takes up 66% of the text width of the page
+
+%------------------------------------------------
+% Experience
+%------------------------------------------------
+
+\section{Relevant Work Experience}
+
+\runsubsection{Lockheed Martin}
+\descript{| Software Engineer Associate, International Submarine Programs}
+
+\location{August 2017 - Present | Manassas, VA}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\begin{tightitemize}
+\item Created a Jenkins pipeline to provision a full virtual software development and runtime environments for Fedora Core 9 and RHEL7.3 operating systems.
+\item Led the migration of software and operating system components from Fedora Core 9 to RHEL7.4 and from RHEL5.4 to RHEL7.4.
+\item Designed and implemented a data recording and playback system for future analysis of core sensor data.
+\item Reduced disk usage 75\% by migrating compile and development environments to Docker containers.
+\item Sped up the software deployment process by 30\% using Ansible playbooks.
+\item Built a file parser to convert sigc++ API to boost signals. Saved team \$60,000 of labor hours.
+\item Risk Management Framework representative for my lab. Responsible for ensuring my lab is compliant with government regulation of classified assets and developing common security procedures across all classified labs at Manassas site.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%-----------------------------------------------
+
+\runsubsection{Google}
+\descript{| Sofware Engineer, Tools and Infrastructure Intern}
+
+\location{May 2016 - August 2016 (12 weeks) | Mountain View, CA}
+
+\begin{tightitemize}
+\item Extended an existing iterative testing tool for Java regression tests. Allows engineers to run these tests 5 times faster.
+\item Added in a test case filtering feature to the tool for even faster test run speeds.
+\item Fixed race conditions and other bugs to speed up the release of the testing tool.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%-----------------------------------------------
+
+\runsubsection{Google}
+\descript{| Engineering Practicum Intern, Google Apps For Work}
+
+\location{May 2015 – Aug 2015 (12 weeks) | Mountain View, CA}
+
+\begin{tightitemize}
+\item Implemented a shell script to automatically detect and repair missing test coverage for code review and submission of widely used libraries. Doubled test coverage for these libraries.
+\item Designed, implemented, and deployed a Java MapReduce job to report and fix 7 types of data corruption.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{University at Buffalo}
+\descript{| Undergraduate Teaching Assistant}
+
+\location{Intro to Computer Science I \& II | Aug 2014 – May 2017 }
+\begin{tightitemize}
+\item Taught 20+ students in lab environment and 200+ in lecture hall.
+\item Held weekly office hours to guide students through data structure and algorithm design.
+\item Graded midterm and final exam papers.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+\location{Operating Systems | Jan 2017 – May 2017 }
+\begin{tightitemize}
+\item Held 4+ weekly office hours to answer programming assignment questions and guide students through system design.
+\item Organized and participated in hack nights to help students tackle last minute bugs and complete programming assignments before the assignment due date.
+\end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+
+\runsubsection{UB Hacking 2016}
+\descript{| Lead Web Developer}
+
+\begin{tightitemize}
+\item Deployed a Flask web framework to a Digital Ocean Ubuntu server.
+\item Managed the operations of client and server side teams.
+% \item Held biweekly meetings with web team to discuss progress and road blocks.
+\item Met with other team leads weekly to discuss additional features required.
+\end{tightitemize}
+
+%------------------------------------------------
+% Other Work Experience
+%------------------------------------------------
+
+% \section{Other Work Experience}
+
+% \runsubsection{F \& H Cleaning Services, LLC}
+% \descript{| Crew Chief}
+
+% \location{Sept 2011 – Present | Lancaster, NY}
+% \begin{tightitemize}
+% \item Clean office buildings and houses.
+% \item Manage crews of 5 people.
+% \item Work on average 15 hours per week.
+% \end{tightitemize}
+
+\sectionspace % Some whitespace after the section
+
+%------------------------------------------------
+% Awards
+%------------------------------------------------
+
+%\section{Personal Projects} 
+
+% \runsubsection{PDF Scraper}
+% \descript{| Python \textbullet{} Flask \textbullet{} Pymongo \textbullet{} PDFminer} \\
+% \location{Summer 2015}
+
+% \begin{tightitemize}
+% \item Designed a system to find the GPA and programming languages of an uploaded resume for the UB Hacking 2015 event.
+% \item Allows ubhacking's sponsors to filter through participants resumes and download the ones they select as a compressed zip file at 10x the normal speed.
+% \item Can be seen at:  % \urlstyle{same}\url{https://github.com/zmwieand/PDF-Scrapper}
+% \end{tightitemize}
+
+% \sectionspace % Some whitespace after the section
+
+% \runsubsection{GeoTweet}
+% \descript{| Java \textbullet{} Android \textbullet{} Twitter4J} \\
+% \location{Spring 2014}
+
+% \begin{tightitemize}
+% \item Android application to search Twitter based on query content and location.
+% \item Upon entering in a search query and tapping a position on a Google Map View, the application will return 10 recent tweets within a 50 mile radius.
+% \item Can be seen at:\urlstyle{same}\url{https://github.com/zmwieand/GeoTweet}
+% \end{tightitemize}
+
+% \sectionspace % Some whitespace after the section
+
+% \runsubsection{Scrolr}
+% \descript{| C++ \textbullet{} OpenCV} \\
+% \location{Fall 2013}
+
+% \begin{tightitemize}
+% \item Chrome Extension which enables the browser to scroll % vertically and horizontally in response to users' facial movement.
+% \item Winner of Kent Hack Enough 2013.
+% \end{tightitemize}
+
+% \sectionspace
+%----------------------------------------------------------------------------------------
+
+\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+%	SECOND PAGE (EXAMPLE)
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+%\section{Example Section}
+
+%\end{minipage} % The end of the left column
+%\hfill
+%\begin{minipage}[t]{0.66\textwidth} % The right column takes up 66% of the text width of the page
+
+%\section{Example Section 2}
+
+%\end{minipage} % The end of the right column
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
