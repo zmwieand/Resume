@@ -1,0 +1,145 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Work Experience}
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+% ACV Auctions
+%---------------------------------------------------------
+  \cventry
+    {Site Reliability Engineer III} % Job title
+    {ACV Auctions} % Organization
+    {Buffalo, NY} % Location
+    {Oct 2020 - Present} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Team lead for the development of Helm linting and testing rules. Performed Kubernetes schema validation, dependency verification, as well as custom linting rules.}
+        \item {Developed a system for Horizontal Pod Autoscaling using Prometheus and KEDA. Autoscaling metrics included request/second (from Nginx) and uWSGI queue depth.}
+        \item {Migrated AWS WAF components and Security Group rules into Terraform.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Site Reliability Engineer II} % Job title
+    {} % Organization
+    {} % Location
+    {Apr 2019 - Oct 2020} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Built and deployed a fluentd application to all Kubernetes clusters to parse and ship logs to Splunk and NewRelic.}
+        \item {Developer of a tool for the automated spin up and tear down of Kubernetes clusters and networking architecture in AWS EKS.}
+        \item {Infrastructure lead for the breakout of monolithic applications into domains.}
+        \item {Stood up a staging environment for deployment and performance testing. Led to a 10x reduction in deployment failure rate.}
+        \item {Built an on cluster change management database. Tracks the history of changes to various Kubernetes resources on cluster.}
+        \item {Developed a template repository for FastAPI projects following best code and CI/CD practices. Enabled teams to deploy to production in less than 15 minutes.}
+        \item {Implemented a tool for engineers to build Helm charts for their applications based on a simple web form.}
+        \item {Code owner and maintainer of a React.js site to host internal web applications for the company.}
+        % \item {Standardized DNS schema and Helm chart syntax.}
+        \item {Developed several shared libraries for teams to use from Jenkins CI/CD pipelines, i.e. creation of GitHub Releases, notifications to Slack, automated rollbacks with Helm.}
+        \item {Stood up a Vault instance to replace Kubernetes Secrets and enable teams proper RBAC to manage sensitive content.}
+      \end{cvitems}
+    }
+
+
+%---------------------------------------------------------
+% Lockheed Martin
+%---------------------------------------------------------
+  \cventry
+    {Software Engineer Assosciate, International Submarine Programs} % Job title
+    {Lockheed Martin} % Organization
+    {Manassas, VA} % Location
+    {Aug 2017 - Mar 2019} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Created a Jenkins pipeline to provision a full virtual software development and runtime environments for Fedora Core 9 and RHEL7.4.}
+        \item {Led the migration of software and operating system components from Fedora Core 9 to RHEL7.4 and from RHEL5.4 to RHEL7.4.}
+        \item {Designed and implemented a data recording and playback system for future analysis of core sensor data.}
+        \item {Migrated compile and development environments to containerized builds with Docker.}
+        \item {Sped up the software deployment process by 30\% using Ansible playbooks.}
+        \item {Built a file parser to convert sigc++ API to boost signals. Saved team \$60,000 of labor hours.}
+        % \item {Risk Management Framework representative for my lab. Responsible for ensuring my lab is compliant with government regulation of classified assets and developing common security procedures across all classified labs at Manassas site.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+% Google Internship II
+%---------------------------------------------------------
+  \cventry
+    {Software Engineer, Tools and Infrastructure Intern} % Job title
+    {Google} % Organization
+    {Mountain View, CA} % Location
+    {May 2016 - Aug 2016} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Extended an iterative testing tool to include Java regression tests. Tool responsible for maintaining several infrastructure components which allowed engineers to run these tests 5x faster.}
+        \item {Added in a test case filtering feature for even faster test run speeds.}
+        \item {Fixed race conditions and other bugs to speed up the tool's release .}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+% Google Internship I
+%---------------------------------------------------------
+  \cventry
+    {Engineering Practicum Intern} % Job title
+    {Google} % Organization
+    {Mountain View, CA} % Location
+    {May 2015 - Aug 2015} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Implemented a shell script to automatically detect and repair missing test coverage for code review and submission of widely used libraries. Doubled test coverage for these libraries.}
+        \item {Designed, implemented, and deployed a Java Map Reduce job to report and fix 7 types of data corruption.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+% UB TA Positions
+%---------------------------------------------------------
+  % \cventry
+  %   {Undergraduate Teaching Assistant{\enskip\cdotp\enskip}Intro to Computer Science I \& II} % Job title
+  %   {University at Buffalo} % Organization
+  %   {Buffalo, NY} % Location
+  %   {Aug 2014 - May 2017} % Date(s)
+  %   {
+  %     \begin{cvitems} % Description(s) of tasks/responsibilities
+  %       \item {Taught 20+ students in lab environment and 200+ in lecture hall.}
+  %       \item {Held weekly office hours to guide students through data structure and algorithm design.}
+  %       \item {Graded midterm and final exam papers.}
+  %     \end{cvitems}
+  %   }
+
+  % \cventry
+  %   {Undergraduate Teaching Assistant{\enskip\cdotp\enskip}Operating Systems} % Job title
+  %   {} % Organization
+  %   {} % Location
+  %   {Jan 2017 - May 2017} % Date(s)
+  %   {
+  %     \begin{cvitems} % Description(s) of tasks/responsibilities
+  %       \item {Held 4+ weekly office hours to answer programming assignment questions and guide students through system design.}
+  %       \item {Organized and participated in hack nights to help students tackle last minute bugs and complete programming assignments.}
+  %     \end{cvitems}
+  %   }
+
+%---------------------------------------------------------
+% UB Hacking
+%---------------------------------------------------------
+  % \cventry
+  %   {Lead Web Developer} % Job title
+  %   {UB Hacking} % Organization
+  %   {Buffalo, NY} % Location
+  %   {Jan 2016 - Mar 2016} % Date(s)
+  %   {
+  %     \begin{cvitems} % Description(s) of tasks/responsibilities
+  %       \item {Deployed a Flask web framework to a Digital Ocean Ubuntu server.}
+  %       \item {Managed the operations of client and server side teams}
+  %       \item {Met with other team leads weekly to discuss additional features required.}
+  %     \end{cvitems}
+  %   }
+
+%---------------------------------------------------------
+\end{cventries}
