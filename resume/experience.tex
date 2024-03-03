@@ -12,17 +12,34 @@
 % ACV Auctions
 %---------------------------------------------------------
   \cventry
-    {Site Reliability Engineer III, Tech Lead} % Job title
+    {Senior Site Reliability Engineer, Tech Lead} % Job title
     {ACV Auctions} % Organization
     {Buffalo, NY} % Location
-    {Oct 2020 - Present} % Date(s)
+    {Jan 2022 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Responsible for developing quarterly Objectives and Key Results and tracking performance metrics weekly.}
-        \item {Added over 1,500 new alerting rules to our Kubernetes clusters and RDS databases.}
-        \item {Migrated several AWS components such as EKS clusters, VPC/Networking, WAF, and Security Groups into Terraform.}
-        \item {Lead a team to develop Helm chart linting and testing rules. Performs Kubernetes schema validation, dependency verification, as well as custom linting rules.}
-        \item {Developed a system for Horizontal Pod Autoscaling using Prometheus and KEDA. Autoscaling metrics included request/second (from Nginx) and uWSGI queue depth.}
+        \item {Added spot instances to our EKS clusters saving \$20,000 on compute monthly.}
+        \item {Simplified the deployment process by creating a set of Helm charts for common application types e.g. HTTP API, Kafka consumer, cronjob.}
+        \item {Implemented SOX compliance checks into the CI/CD deployment process to enforce audit requirements and track release events.}
+        \item {Created a set of shared Golang modules to encapsulate best practices e.g. structured logging, HTTP setup, application configuration.}
+        \item {Developed a multi-agent pipeline architecture in Jenkins reducing PR pipeline latency by 60\%.}
+        \item {Lead the migration of the engineering observability and monitoring stack from NewRelic to Datadog.}
+        \item {Encapsulated golden signal alert conditions into standard application Helm charts increasing ACV's monitoring coverage.}
+      \end{cvitems}
+    }
+
+  \cventry
+    {Site Reliability Engineer III, Tech Lead} % Job title
+    {} % Organization
+    {} % Location
+    {Oct 2020 - Jan 2022} % Date(s)
+    {
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item {Added over 1,500 new alerting rules to our Kubernetes clusters and RDS databases with Terraform.}
+        \item {Migrated several AWS components such as EKS clusters, VPC/Networking, WAF, and Security Groups into Terraform modules.}
+        \item {Lead a team to develop Helm chart linting and testing rules. Performs Kubernetes schema validation, dependency verification, and custom linting rules.}
+        \item {Developed a system for Horizontal Pod Autoscaling, using Prometheus and KEDA, to scale on custom metrics.}
       \end{cvitems}
     }
 
@@ -35,15 +52,15 @@
       \begin{cvitems} % Description(s) of tasks/responsibilities
         \item {Built and deployed a fluentd application to all Kubernetes clusters to parse and ship logs to Splunk and NewRelic.}
         % \item {Developer of a tool for the automated spin up, tear down and upgrade of Kubernetes clusters and networking architecture in AWS EKS.}
-        \item {Infrastructure lead for the breakout of monolithic applications into domains.}
+        % \item {Infrastructure lead for the breakout of monolithic applications into domains.}
         \item {Stood up a staging environment for deployment and performance testing. Led to a 10x reduction in deployment failure rate.}
         \item {Built an on cluster change management database. Tracks the history of changes to various Kubernetes resources on cluster.}
         \item {Developed a template repository for FastAPI projects following best code and CI/CD practices. Enables teams to deploy to production in less than 15 minutes.}
-        \item {Implemented a tool for engineers to build Helm charts for their applications based on a simple web form.}
-        \item {Code owner and maintainer of a React.js site to host internal web applications for the company.}
+        % \item {Implemented a tool for engineers to build Helm charts for their applications based on a simple web form.}
+        % \item {Code owner and maintainer of a React.js site to host internal web applications for the company.}
         % \item {Standardized DNS schema and Helm chart syntax.}
-        \item {Developed several shared libraries for teams to use from Jenkins CI/CD pipelines, i.e. creation of GitHub Releases, notifications to Slack, automated rollbacks with Helm.}
-        \item {Stood up a Vault instance to replace Kubernetes Secrets and enable teams proper RBAC to manage sensitive content.}
+        % \item {Developed several shared libraries for teams to use from Jenkins CI/CD pipelines, i.e. creation of GitHub Releases, notifications to Slack, automated rollbacks with Helm.}
+        \item {Deployed an instance of Vault to replace Kubernetes Secrets and enable teams proper RBAC to manage sensitive content.}
       \end{cvitems}
     }
 
@@ -89,8 +106,8 @@
 %---------------------------------------------------------
   \cventry
     {Engineering Practicum Intern} % Job title
-    {Google} % Organization
-    {Mountain View, CA} % Location
+    {} % Organization
+    {} % Location
     {May 2015 - Aug 2015} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
