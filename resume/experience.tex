@@ -12,23 +12,27 @@
 % ACV Auctions
 %---------------------------------------------------------
   \cventry
-    {Staff Engineer - Infrastructure, Tech Lead} % Job title
+    {Staff Engineer - Infrastructure/Technical Lead} % Job title
     {ACV Auctions} % Organization
     {Buffalo, NY} % Location
     {April 2025 - Present} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Responsible for developing quarterly Objectives and Key Results and tracking performance metrics weekly.}
-        \item {Built HTTP middleware modules in Golang and Python to export request per second metrics to Prometheus for horizontal pod autoscaling.}
-        \item {Designed a Disaster Recovery architecture to mitigate against ransomware attacks and region loss events.}
-        \item {Routed all public facing web traffic through Cloudflare and implemented Security Rules to mitigate against DDoS attacks.}
+        % \item {Responsible for developing quarterly Objectives and Key Results and tracking performance metrics weekly.}
+        \item {Designed a multi-region disaster recovery architecture to protect AWS and Kubernetes workloads against ransomware and regional failures, establishing an RTO of less than 24 hours.}
+        % \item {Designed a Disaster Recovery architecture to mitigate against ransomware attacks and region loss events.}
+        \item {Architected and implemented Cloudflare at the edge for all public-facing traffic, centralizing security controls to improve DDoS resilience for 500 applications serving 120M requests per day.}
+        % \item {Routed all public facing web traffic through Cloudflare and implemented Security Rules to mitigate against DDoS attacks.}
         % \item {Karpenter - stabilizing cluster node churn, optimized disks for faster application startup}
-        \item {Migrating Kubernetes traffic off ingress-nginx and onto Istio utilizing Gateway API.}
+        \item {Led the implementation of Kubernetes security standards, developing hardened base images and enforcing secure workload configurations across 25 Kubernetes clusters and 1,000+ workloads, reducing critical vulnerabilities by 40\%.}
+        % \item {Leading the migration of Kubernetes traffic from ingress-nginx to Istio using the Gateway API.}
+        \item {Architecting the infrastructure for preview and sandbox environments enabling 450+ Product and Engineering employees to rapidly prototype through agentic development.}
+        % AI Infrastructure
       \end{cvitems}
     }
 
   \cventry
-    {Senior Site Reliability Engineer, Tech Lead} % Job title
+    {Senior Site Reliability Engineer/Technical Lead} % Job title
     {} % Organization
     {} % Location
     {Jan 2022 - April 2025} % Date(s)
@@ -36,28 +40,29 @@
       \begin{cvitems} % Description(s) of tasks/responsibilities
         % \item {Responsible for developing quarterly Objectives and Key Results and tracking performance metrics weekly.}
         % Added Karpenter here for now
-        \item {Added spot instances with Karpenter into our EKS clusters saving \$20,000 on compute monthly.}
-        \item {Simplified the deployment process by creating a set of Helm charts for common application types e.g. HTTP API, Kafka consumer, cronjob.}
+        \item {Introduced spot instances with Karpenter across EKS clusters, reducing compute costs by \$20,000 per month.}
+        \item {Streamlined application deployment by creating standardized Helm charts enabling developers to autonomously deploy and rollback HTTP APIs, Kafka consumers, CronJobs, and database migrations, achieving 80\% workload adoption within the first 12 months.}
         \item {Implemented SOX compliance checks into the CI/CD deployment process to enforce audit requirements and track release events.}
-        \item {Created a set of shared Golang modules to encapsulate best practices e.g. structured logging, HTTP setup, application configuration.}
-        \item {Developed a multi-agent pipeline architecture in Jenkins reducing Pull Request pipeline latency by 60\%.}
-        % \item {Led the migration of the engineering observability and monitoring stack from NewRelic to Datadog.}
-        \item {Encapsulated golden signal alert conditions in Datadog into standard application Helm charts increasing ACV's monitoring coverage.}
+        \item {Created shared Go modules to encapsulate best practices, including structured logging, HTTP setup, and distributed tracing.}
+        \item {Developed a multi-agent Jenkins pipeline architecture, reducing pull request pipeline latency by 60\%.}
+        % \item {Led the migration of the engineering observability and monitoring stack from New Relic to Datadog.}
+        \item {Encapsulated golden signal alert conditions in Datadog into standard application Helm charts, tripling ACV's monitoring coverage.}
+        % \item {Built HTTP middleware modules in Go and Python to export request per second metrics to Prometheus for horizontal pod autoscaling.}
         % \item {Designing ACV's Disaster Recovery architecture to mitigate against ransomware attacks and region loss events.}
       \end{cvitems}
     }
 
   \cventry
-    {Site Reliability Engineer III, Tech Lead} % Job title
+    {Site Reliability Engineer III} % Job title
     {} % Organization
     {} % Location
     {Oct 2020 - Jan 2022} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Migrated several AWS components such as EKS clusters, VPC/Networking, WAF, and Security Groups into Terraform modules.}
+        \item {Migrated several AWS components such as EKS clusters, VPC/networking, WAF, and Security Groups into Terraform modules, eliminating 10+ hours a week of manual configuration work.}
         % \item {Added over 1,500 new alerting rules to our Kubernetes clusters and RDS databases with Terraform.}
-        \item {Developed Helm chart linting and testing rules to perform Kubernetes schema validation, dependency verification, and custom linting rules.}
-        \item {Developed a system for Horizontal Pod Autoscaling, using Prometheus and KEDA, to scale on custom metrics.}
+        \item {Developed Helm chart linting and testing rules performing Kubernetes schema validation and dependency verification, catching recurring misconfiguration patterns before they reached production clusters.}
+        \item {Developed a system for Horizontal Pod Autoscaling, using Prometheus and KEDA, to enable 100+ workloads to scale on custom metrics like Kafka consumer lag.}
       \end{cvitems}
     }
 
@@ -68,12 +73,12 @@
     {Apr 2019 - Oct 2020} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Built and deployed a fluentd application to all Kubernetes clusters to parse and ship logs to Splunk and NewRelic.}
+        \item {Built and deployed a fluentd application to all Kubernetes clusters to parse and ship logs to Splunk and New Relic.}
         % \item {Developer of a tool for the automated spin up, tear down and upgrade of Kubernetes clusters and networking architecture in AWS EKS.}
         % \item {Infrastructure lead for the breakout of monolithic applications into domains.}
-        \item {Stood up a staging environment for deployment and performance testing resulting in a 10x reduction in deployment failure rate.}
-        \item {Built an on cluster change management database that tracks the history of changes to various Kubernetes resources on cluster.}
-        \item {Developed a template repository for FastAPI projects, following software and CI/CD best practices, enabling teams to deploy to production in less than 15 minutes.}
+        \item {Stood up a staging environment for deployment and performance testing, resulting in a 10x reduction in deployment failure rate.}
+        % \item {Built an on cluster change management database that tracks the history of changes to various Kubernetes resources on cluster.}
+        \item {Developed template repositories following software and CI/CD best practices, enabling teams to deploy to production in less than 15 minutes.}
         % \item {Implemented a tool for engineers to build Helm charts for their applications based on a simple web form.}
         % \item {Code owner and maintainer of a React.js site to host internal web applications for the company.}
         % \item {Standardized DNS schema and Helm chart syntax.}
@@ -93,11 +98,12 @@
     {Aug 2017 - Mar 2019} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Created a Jenkins pipeline to provision a full virtual software development and runtime environments for Fedora Core 9 and RHEL7.4.}
-        \item {Led the migration of software and operating system components from Fedora Core 9 to RHEL7.4 and from RHEL5.4 to RHEL7.4.}
+        \item {Built Jenkins pipelines to provision complete development and runtime environments across Fedora and RHEL.}
+        \item {Led migration of software and development environments from legacy Fedora/RHEL releases to RHEL7.}
+        \item {Containerized application environments with Docker and automated deployment with Ansible, reducing deployment time by 30\%.}
         % \item {Designed and implemented a data recording and playback system for future analysis of core sensor data.}
-        \item {Migrated compile and development environments to containerized builds with Docker.}
-        \item {Sped up the software deployment process by 30\% using Ansible playbooks.}
+        % \item {Migrated compile and development environments to containerized builds with Docker.}
+        % \item {Sped up the software deployment process by 30\% using Ansible playbooks.}
         % \item {Built a file parser to convert sigc++ API to boost signals, saving the team \$60,000 of labor hours.}
         % \item {Risk Management Framework representative for my lab. Responsible for ensuring my lab is compliant with government regulation of classified assets and developing common security procedures across all classified labs at Manassas site.}
       \end{cvitems}
@@ -113,26 +119,28 @@
     {May 2016 - Aug 2016} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Extended an iterative testing tool to include Java regression tests. Tool responsible for maintaining several infrastructure components which allowed engineers to run these tests 5x faster.}
-        \item {Added in a test case filtering feature for even faster test run speeds.}
-        \item {Fixed race conditions and other bugs to speed up the tool's release.}
+        \item {Extended an iterative testing tool to support Java regression tests, enabling engineers to execute tests 5x faster.}
+        % \item {Extended an iterative testing tool to include Java regression tests. Tool responsible for maintaining several infrastructure components which allowed engineers to run these tests 5x faster.}
+        \item {Added test case filtering and resolved race conditions and other defects to improve tool performance and release stability.}
+        % \item {Added in a test case filtering feature for even faster test run speeds.}
+        % \item {Fixed race conditions and other bugs to speed up the tool's release.}
       \end{cvitems}
     }
 
 %---------------------------------------------------------
 % Google Internship I
 %---------------------------------------------------------
-  \cventry
-    {Engineering Practicum Intern} % Job title
-    {} % Organization
-    {} % Location
-    {May 2015 - Aug 2015} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Implemented a shell script to automatically detect and repair missing test coverage for code review and submission of widely used libraries which doubled the test coverage for these libraries.}
-        \item {Designed, implemented, and deployed a Java Map Reduce job to report and fix 7 types of data corruption.}
-      \end{cvitems}
-    }
+  % \cventry
+  %   {Engineering Practicum Intern} % Job title
+  %   {} % Organization
+  %   {} % Location
+  %   {May 2015 - Aug 2015} % Date(s)
+  %   {
+  %     \begin{cvitems} % Description(s) of tasks/responsibilities
+  %       \item {Implemented a shell script to automatically detect and repair missing test coverage for code review of widely used libraries, doubling the test coverage for these libraries.}
+  %       \item {Designed, implemented, and deployed a Java Map Reduce job to report and fix 7 types of data corruption.}
+  %     \end{cvitems}
+  %   }
 
 %---------------------------------------------------------
 % UB TA Positions
